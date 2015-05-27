@@ -2,6 +2,9 @@ package db
 
 // http://slick.typesafe.com/doc/3.0.0/schemas.html
 
+/**
+ * Table definitions.
+ */
 object Tables {
 
   import SlickDB.driver.api._

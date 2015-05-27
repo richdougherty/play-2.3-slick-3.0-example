@@ -7,10 +7,9 @@ import slick.dbio._
 import slick.driver._
 import slick.util.AsyncExecutor
 
-// https://www.playframework.com/documentation/2.3.x/ScalaPlugins
-
 /**
- * Interface to the Slick database operations.
+ * Interface to the Slick database operations. This class uses the
+ * SlickDBPlugin to find the current active database.
  */
 object SlickDB {
 
@@ -34,6 +33,8 @@ object SlickDB {
 
 /**
  * Use a plugin to create and clean up the Slick objects.
+ *
+ * https://www.playframework.com/documentation/2.3.x/ScalaPlugins
  */
 class SlickDBPlugin(implicit app: Application) extends Plugin {
 
