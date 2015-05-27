@@ -1,0 +1,15 @@
+# Users schema
+ 
+# --- !Ups
+ 
+CREATE TABLE UPLOAD (
+    ID BIGINT(20) NOT NULL AUTO_INCREMENT,
+    NAME VARCHAR(255) NOT NULL,
+    DATA BLOB NOT NULL,
+    PRIMARY KEY (ID)
+);
+ 
+# --- !Downs
+ 
+DROP TABLE UPLOAD;
+
