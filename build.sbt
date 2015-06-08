@@ -12,5 +12,6 @@ libraryDependencies ++= Seq(
   cache,
   ws,
   "com.typesafe.slick" %% "slick" % "3.0.0",
-  "com.google.code.findbugs" % "jsr305" % "2.0.3" // Needed by guava
+  "com.google.code.findbugs" % "jsr305" % "2.0.3", // Needed by guava,
+  "commons-io" % "commons-io" % "2.4" // used for FileBlob implementation
 )
